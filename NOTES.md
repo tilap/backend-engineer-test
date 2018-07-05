@@ -5,6 +5,8 @@
 - `npm run lint`: code linting with fix
 - `npm run test`: test feature with jest
 
+Add env var `SHOW_DEBUG=1` when running script to get the error logs on script fail
+
 ## Features inputs:
 
 1. Overlapping months of experience with the same skill(s) should not be counted twice, see assets/months-overlap.png
