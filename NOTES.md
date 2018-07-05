@@ -3,6 +3,7 @@
 ## Script commands
 
 - `npm run lint`: code linting with fix
+- `npm run test`: test feature with jest
 
 ## Features inputs:
 
