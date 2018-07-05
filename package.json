@@ -21,6 +21,7 @@
   },
   "scripts": {
     "lint": "eslint --ext .js --fix --format=node_modules/eslint-formatter-pretty .",
+    "start": "node ./exercise",
     "test": "jest"
   }
 }
