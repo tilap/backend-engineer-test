@@ -11,5 +11,17 @@
   "bugs": {
     "url": "https://github.com/hellocomet/backend-engineer-test/issues"
   },
-  "homepage": "https://github.com/hellocomet/backend-engineer-test"
+  "homepage": "https://github.com/hellocomet/backend-engineer-test",
+  "devDependencies": {
+    "eslint": "5.0.1",
+    "eslint-config-airbnb": "17.0.0",
+    "eslint-formatter-pretty": "1.3.0",
+    "eslint-plugin-import": "2.13.0",
+    "jest": "23.3.0"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js --fix --format=node_modules/eslint-formatter-pretty .",
+    "start": "node ./exercise",
+    "test": "jest"
+  }
 }
