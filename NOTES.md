@@ -1,11 +1,23 @@
 # NOTES
 
-## Script commands
+So here is my code to answer your exercice.
+
+## Run
+
+Script commands
 
 - `npm run lint`: code linting with fix
 - `npm run test`: test feature with jest
 
-## Features inputs:
+You can add the env var `SHOW_DEBUG`to see the error instead of exiting roughly:
+
+```
+SHOW_DEBUG=1 node exercise
+```
+
+## How I worked
+
+### I did a sumup of features inputs:
 
 1. Overlapping months of experience with the same skill(s) should not be counted twice, see assets/months-overlap.png
 2. All professional experiences startDate and endDate values will be on the first day of the month.
@@ -22,7 +34,7 @@ Extra interview note:
 
 NB: rule #7 does not really makes senses against rules #2 + #8
 
-## Lib anatomy
+### I draw the main part of my lib anatomy
 
 - a main function will do the global stuff and throw error if any
   - [ ] will check the required input format so I won't care anymore later
@@ -31,7 +43,7 @@ NB: rule #7 does not really makes senses against rules #2 + #8
   - [ ] will compute duration for each skill
   - [ ] will output the result with input freelance data
 
-## Coding steps
+### I defined main coding steps
 
 - Switch to expected node version on dev env
 - Add some dev tools:
@@ -41,3 +53,8 @@ NB: rule #7 does not really makes senses against rules #2 + #8
 
 - put comment in code
 - skip any doc
+
+## Notes
+
+- https://www.geeksforgeeks.org/merging-intervals/ : the tip, to sort by starting date to be more efficient
+- I found some relative `moment` libs for duration ([moment-period](https://www.npmjs.com/package/moment-period)) but found it to heavy for that piece of code
