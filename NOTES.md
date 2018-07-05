@@ -1,5 +1,9 @@
 # NOTES
 
+## Script commands
+
+- `npm run lint`: code linting with fix
+
 ## Features inputs:
 
 1. Overlapping months of experience with the same skill(s) should not be counted twice, see assets/months-overlap.png
